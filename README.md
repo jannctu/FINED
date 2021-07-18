@@ -25,6 +25,22 @@ Comparison of complexity and accuracy performance among various edge detection s
 ![image](img/S10.png)
 The PR curves of various systems on BSDS500
 
+# FINED-API
+Simple API to try FINED. 
+* `End Point` : ``` http://lab1.jankristanto.com:8000/image/predict ```
+```json 
+'Content-Type: multipart/form-data'
+{
+    'file': binary
+}
+```
+
+* response :
+  ```json
+  Response headers content-type: image/png
+  ``` 
+* Sample response : 
+![image](img/result_prediction.png)
 # Citing
 Thanks for your interest in our work, please consider citing:
 
