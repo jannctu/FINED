@@ -28,6 +28,8 @@ The PR curves of various systems on BSDS500
 # FINED-API
 Simple API to try FINED. 
 * `End Point` : ``` http://lab1.jankristanto.com:8000/image/predict ```
+* Method : `POST` 
+
 ```json 
 'Content-Type: multipart/form-data'
 {
@@ -41,8 +43,21 @@ Simple API to try FINED.
   ``` 
 * Sample response : 
 ![image](img/result_prediction.png)
+
+**Example:** [demo](examples/api_demo.py)
 # Citing
 Thanks for your interest in our work, please consider citing:
 
-    Link coming soon...    
-This paper is accepted to [ICME2021](https://2021.ieeeicme.org/) 
+    ```
+    @INPROCEEDINGS{
+	    9428230,
+		author={Wibisono, Jan Kristanto and Hang, Hsueh-Ming},
+		booktitle={2021 IEEE International Conference on Multimedia and Expo (ICME)}, 
+		title={Fined: Fast Inference Network for Edge Detection}, 
+		year={2021},
+		volume={},
+		number={},
+		pages={1-6},
+		doi={10.1109/ICME51207.2021.9428230}
+	}
+	```
